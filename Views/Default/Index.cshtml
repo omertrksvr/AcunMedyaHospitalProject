@@ -1,0 +1,154 @@
+﻿@{
+    ViewBag.Title = "Ana Sayfa";
+    Layout = "~/Views/UILayout/Index.cshtml";
+}
+
+<!-- Slider Alanı Başlangıcı -->
+@Html.Action("PartialSlider", "Default")
+<!-- Slider Alanı Bitişi -->
+<!-- Hizmetler Alanı Başlangıcı -->
+@Html.Action("PartialService", "Default")
+<!-- Hizmetler Alanı Bitişi -->
+<!-- Hoşgeldiniz Alanı Başlangıcı -->
+<div class="welcome_docmed_area">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-6 col-lg-6">
+                <div class="welcome_thumb">
+                    <div class="thumb_1"></div>
+                    <div class="thumb_2" style="position: relative; top: 50px;">
+                        <img src="~/Templates/docmed-master/img/about/business.png" alt="Hakkımızda">
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-6">
+                <div class="welcome_docmed_info">
+                    <h2>Hastanemize Hoş Geldiniz</h2>
+                    <h3>
+                        Sağlığınız İçin <br>
+                        En İyi Bakım
+                    </h3>
+                    <p>
+                        Kaliteli sağlık hizmetleriyle sizlere en iyi hizmeti sunuyoruz. Deneyimli doktorlarımız ve modern tesislerimizle sağlığınızı önemsiyoruz.
+                    </p>
+                    <ul>
+                        <li> <i class="flaticon-right"></i> • Konforlu ve modern hastane ortamı</li>
+                        <li> <i class="flaticon-right"></i> • Alanında uzman doktorlar ve sağlık çalışanları</li>
+                        <li> <i class="flaticon-right"></i> • 7/24 acil servis hizmeti</li>
+                    </ul>
+                    <a href="#" class="boxed-btn3-white-2">Daha Fazla Bilgi</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Hoşgeldiniz Alanı Bitişi -->
+<!-- Bölümler Alanı Başlangıcı -->
+@Html.Action("PartialDepartment", "Default")
+<!-- Bölümler Alanı Bitişi -->
+<!-- Hasta Yorumları Alanı Başlangıcı -->
+@Html.Action("PartialPatientComment", "Default")
+<!-- Hasta Yorumları Alanı Bitişi -->
+<!-- Uzmanlık Alanlarımız Başlangıcı -->
+<div class="business_expert_area">
+    <div class="business_tabs_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <ul class="nav" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="hizmet-tab" data-toggle="tab" href="#hizmet" role="tab" aria-controls="hizmet"
+                               aria-selected="true" style="display: flex; align-items: center;">
+                                <img src=~/Templates/docmed-master/img/about/mük.png alt="Mükemmel Hizmetler" style="width: 50px; height: 50px; margin-right: 10px;">
+                                Mükemmel Hizmetler
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="doktor-tab" data-toggle="tab" href="#doktor" role="tab" aria-controls="doktor"
+                               aria-selected="false" style="display: flex; align-items: center;">
+                                <img src=~/Templates/docmed-master/img/about/uzm.png alt="Alanında Uzman Doktorlar" style="width: 50px; height: 50px; margin-right: 10px;">
+                                Alanında Uzman Doktorlar
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="acil-tab" data-toggle="tab" href="#acil" role="tab" aria-controls="acil"
+                               aria-selected="false" style="display: flex; align-items: center;">
+                                <img src=~/Templates/docmed-master/img/about/acl.png style="width: 50px; height: 50px; margin-right: 10px;">
+                                Acil Servis
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="border_bottom">
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="hizmet" role="tabpanel" aria-labelledby="hizmet-tab">
+                    <div class="row align-items-center">
+                        <div class="col-xl-6 col-md-6">
+                            <div class="business_info">
+                            
+                                <h3>Aileniz İçin En İyi Sağlık Hizmeti</h3>
+                                <p>
+                                    Modern tıbbi teknoloji ve deneyimli doktorlarla sağlığınızı güvence altına alıyoruz.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-md-6">
+                            <div class="business_thumb">
+                                <img src="~/Templates/docmed-master/img/about/hak2.jpg" alt="Hizmetlerimiz">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="doktor" role="tabpanel" aria-labelledby="doktor-tab">
+                    <div class="row align-items-center">
+                        <div class="col-xl-6 col-md-6">
+                            <div class="business_info">
+                                <div class="icon">
+                                </div>
+                                <h3>Alanında Uzman Doktorlarımız</h3>
+                                <p>
+                                    Deneyimli doktorlarımızla sizlere en iyi sağlık hizmetini sunuyoruz.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-md-6">
+                            <div class="business_thumb">
+                                <img src="~/Templates/docmed-master/img/about/doktor.png" alt="Doktorlarımız">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="acil" role="tabpanel" aria-labelledby="acil-tab">
+                    <div class="row align-items-center">
+                        <div class="col-xl-6 col-md-6">
+                            <div class="business_info">
+                                <div class="icon">
+                                </div>
+                                <h3>7/24 Acil Servis Hizmeti</h3>
+                                <p>
+                                    Acil durumlar için her zaman hazırız. 7 gün 24 saat hizmetinizdeyiz.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-md-6">
+                            <div class="business_thumb">
+                                <img src="~/Templates/docmed-master/img/about/sevs.jpg" alt="Acil Servis">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Uzmanlık Alanlarımız Bitişi -->
+<!-- Doktorlar Alanı Başlangıcı -->
+@Html.Action("PartialDoctor", "Default")
+<!-- Doktorlar Alanı Bitişi -->
+<!-- Acil İletişim Alanı Başlangıcı -->
+@Html.Action("PartialEmergency", "Default")
+<!-- Acil İletişim Alanı Bitişi -->

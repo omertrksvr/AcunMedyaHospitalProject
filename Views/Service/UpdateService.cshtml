@@ -1,0 +1,53 @@
+﻿@model AcunMedyaHospitalProject.Entities.Service
+@{
+    ViewBag.Title = "UpdateService";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="col-md-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Hizmet Güncelleme Formu</h4>
+            <p class="card-description">Mevcut hizmeti bu formdan güncelleyebilirsiniz.</p>
+            <form method="post" class="forms-sample">
+                @Html.HiddenFor(x => x.Id)
+                @Html.AntiForgeryToken()
+
+                <div class="form-group">
+                    <label for="serviceName">Hizmet Adı:</label>
+                    @Html.TextBoxFor(x => x.Name, new { @class = "form-control", placeholder = "Hizmet adını girin" })
+                    <span class="text-danger">@Html.ValidationMessageFor(x => x.Name)</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="serviceDescription">Açıklama:</label>
+                    @Html.TextAreaFor(x => x.Description, new { @class = "form-control", placeholder = "Hizmet açıklamasını girin", rows = "3" })
+                    <span class="text-danger">@Html.ValidationMessageFor(x => x.Description)</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="serviceIcon">İkon Adı:</label>
+                    @Html.TextBoxFor(x => x.IconName, new { @class = "form-control", placeholder = "İkon adını girin" })
+                    <span class="text-danger">@Html.ValidationMessageFor(x => x.IconName)</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="buttonName">Buton Adı:</label>
+                    @Html.TextBoxFor(x => x.ButtonName, new { @class = "form-control", placeholder = "Buton adını girin" })
+                    <span class="text-danger">@Html.ValidationMessageFor(x => x.ButtonName)</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="buttonLink">Buton Linki:</label>
+                    @Html.TextBoxFor(x => x.ButtonLink, new { @class = "form-control", placeholder = "Buton linkini girin", type = "url" })
+                    <span class="text-danger">@Html.ValidationMessageFor(x => x.ButtonLink)</span>
+                </div>
+
+                <button type="submit" class="btn btn-primary mr-2">Güncelle</button>
+                <a href="@Url.Action("Index", "Service")" class="btn btn-light">İptal</a>
+            </form>
+        </div>
+    </div>
+</div>
+
+

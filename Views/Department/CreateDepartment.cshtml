@@ -1,0 +1,38 @@
+﻿@model AcunMedyaHospitalProject.Entities.Department
+
+@{
+    ViewBag.Title = "CreateDepartment";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="col-md-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Yeni Bölüm Ekle</h4>
+            <p class="card-description">Yeni bir bölüm eklemek için aşağıdaki formu doldurunuz.</p>
+            <form method="post" class="forms-sample">
+
+                <div class="form-group">
+                    <label for="departmentName">Bölüm Adı:</label>
+                    @Html.TextBoxFor(x => x.Name, new { @class = "form-control", placeholder = "Bölüm adını giriniz" })
+                    <span class="text-danger">@Html.ValidationMessageFor(x => x.Name)</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="imageUrl">Resim URL:</label>
+                    @Html.TextBoxFor(x => x.ImageUrl, new { @class = "form-control", placeholder = "Resim URL'sini giriniz" })
+                    <span class="text-danger">@Html.ValidationMessageFor(x => x.ImageUrl)</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="description">Açıklama:</label>
+                    @Html.TextAreaFor(x => x.Description, new { @class = "form-control", rows = 3, placeholder = "Bölüm hakkında kısa açıklama giriniz" })
+                    <span class="text-danger">@Html.ValidationMessageFor(x => x.Description)</span>
+                </div>
+
+                <button type="submit" class="btn btn-primary mr-2">Kaydet</button>
+                <a href="@Url.Action("Index", "Department")" class="btn btn-light">İptal</a>
+            </form>
+        </div>
+    </div>
+</div>

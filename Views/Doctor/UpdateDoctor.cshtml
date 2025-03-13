@@ -1,0 +1,37 @@
+﻿@model AcunMedyaHospitalProject.Entities.Doctor
+@{
+    ViewBag.Title = "Doktor Güncelle";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="col-md-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Doktor Güncelleme Formu</h4>
+            <p class="card-description">Mevcut doktor bilgilerini güncelleyebilirsiniz.</p>
+            <form method="post" class="forms-sample">
+                <div class="form-group">
+                    <label for="FirstName">Ad: </label>
+                    @Html.TextBoxFor(x => x.FirstName, new { @class = "form-control" })
+                    <span class="text-danger">@Html.ValidationMessageFor(x => x.FirstName)</span>
+                </div>
+                <div class="form-group">
+                    <label for="LastName">Soyad: </label>
+                    @Html.TextBoxFor(x => x.LastName, new { @class = "form-control" })
+                    <span class="text-danger">@Html.ValidationMessageFor(x => x.LastName)</span>
+                </div>
+                <div class="form-group">
+                    <label for="ImageUrl">Resim URL: </label>
+                    @Html.TextBoxFor(x => x.ImageUrl, new { @class = "form-control" })
+                    <span class="text-danger">@Html.ValidationMessageFor(x => x.ImageUrl)</span>
+                </div>
+                <div class="form-group">
+                    <label for="DepartmentId">Bölüm</label>
+                    @Html.DropDownListFor(x => x.DepartmentId, (SelectList)TempData["Departments"], "Bölüm Seçin", new { @class = "form-control" })
+                    <span class="text-danger">@Html.ValidationMessageFor(x => x.DepartmentId, "Lütfen bölüm seçin")</span>
+                </div>
+                <button type="submit" class="btn btn-primary mr-2"> Güncelle </button>
+            </form>
+        </div>
+    </div>
+</div>
