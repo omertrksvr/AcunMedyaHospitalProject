@@ -1,23 +1,42 @@
-# 🌐 <span style="font-family: Arial, sans-serif;">Kişisel Portföy Sayfası</span>
+## 🏥 AcunMedyaHospitalProject
 
-Bu proje, Acun Medya Akademi'de, değerli hocalarım <span style="font-weight: bold;">Fatih Akbulut</span>, <span style="font-weight: bold;">Abdullah Kuş</span> ve <span style="font-weight: bold;">Murat Yücedağ</span> rehberliğinde verilen ilk case çalışması ve projem olarak geliştirilmiştir. 🌟  
-ASP.NET MVC Framework kullanılarak geliştirilmiş bir **kişisel portföy sayfasıdır**. Sitede yer alan tüm içeriklerin yönetimi için bir **Admin Paneli** bulunmaktadır. Veriler, veritabanından dinamik olarak çekilmekte ve panel üzerinden ekleme, silme ve güncelleme işlemleri yapılabilmektedir.
+Bu proje, **Acun Medya Akademi**'de değerli hocalarım **Fatih Akbulut**, **Abdullah Kuş** ve **Murat Yücedağ** rehberliğinde geliştirdiğim bir **hastane yönetim sistemi** çalışmasıdır. 🌟  
+**ASP.NET MVC Framework** kullanılarak oluşturulmuş bu sistemde, hastane yönetimini kolaylaştıran bir **Admin Paneli** bulunmaktadır. Doktorlar, hastalar, randevular ve diğer veriler **dinamik** olarak yönetilebilir.  
 
-## <span style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">🚀 Özellikler</span>
-- **🛠️ Admin Paneli:** Site içeriklerini yönetmek için kolay kullanım.
-- **🔄 Dinamik İçerik:** Tüm veriler veritabanından dinamik olarak çekilmektedir.
-- **🎨 Modern Arayüz:** Şık bir tasarım için Bootstrap ve CSS kullanımı.
-- **💡 Verimli Veri Yönetimi:** Entity Framework ile hızlı ve güvenilir veri işlemleri.
+## 🚀 **Öne Çıkan Özellikler**
+- **🛠️ Admin Paneli:** Kullanıcı dostu arayüz ile sistem yönetimi.
+- **📅 Randevu Takibi:** Hastalar için randevu alma ve yönetme imkanı.
+- **🔄 Dinamik İçerik:** Tüm veriler **veritabanından** otomatik olarak çekilir ve güncellenebilir.
+- **🎨 Modern UI:** **Bootstrap ve CSS** ile şık ve duyarlı (responsive) tasarım.
+- **💡 Güçlü Veri İşleme:** **Entity Framework** ile hızlı ve güvenilir veri işlemleri.
 
-## <span style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">✨ Teknik Detaylar</span>
-- **📂 Model-View-Controller Yapısı:** İş mantığı (Controller), kullanıcı arayüzü (View) ve veritabanı (Model) ayrımı.
-- **🔧 CRUD İşlemleri:** Veritabanında kayıt oluşturma, okuma, güncelleme ve silme işlemleri.
-- **📑 Layout Yönetimi:** Sayfanın ortak şablonları için _Layout.cshtml kullanımı.
-- **📋 Partial View Kullanımı:** Tekrarlayan bileşenlerin yönetimi ve yeniden kullanımı.
-- **🛠️ Entity Framework Sorguları:** ORM kullanarak veritabanı işlemlerinin yönetimi.
+## 🛠️ **Kullanılan Teknolojiler**
+| Teknoloji | Açıklama |
+|-----------|---------|
+| **ASP.NET MVC** | Güçlü bir **web geliştirme mimarisi**. |
+| **Entity Framework (6.0)** | **ORM** kullanarak **veritabanı işlemlerini** yönetir. |
+| **Microsoft SQL Server (MSSQL)** | Güçlü ve güvenilir **veritabanı yönetim sistemi**. |
+| **HTML & CSS** | Web sayfası yapısını ve tasarımını oluşturur. |
+| **Bootstrap** | Duyarlı ve modern bir kullanıcı arayüzü sağlar. |
+| **JavaScript** | Dinamik ve etkileşimli öğeler için. |
+| **LINQ** | Daha okunabilir ve performanslı veri sorguları. |
 
-## <span style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">📂 Proje Görselleri</span>
-![a57fc4dc-8566-4638-9e24-6f8fddf32529](https://github.com/user-attachments/assets/860f11dd-3df1-40ba-be0a-3279c4e1fa45)  
-![ffc5b5a5-0c73-4b9e-96c4-b66ae334719d](https://github.com/user-attachments/assets/7da4d47e-61ca-499f-8bfa-3581b810cea4)  
-![acb549b5-e503-441d-945d-14eb0a5586cd](https://github.com/user-attachments/assets/70c7b98d-bdc9-4d92-a308-4def9753b1eb)  
-![3eeec45a-443f-4cfc-92f5-7533816bf0cd](https://github.com/user-attachments/assets/5f53eed8-6d99-4380-aa33-8df388a693bb)
+## ✨ **Teknik Detaylar**
+- **📂 MVC Mimarisi:** İş mantığı (**Controller**), kullanıcı arayüzü (**View**) ve veritabanı (**Model**) ayrımı.
+- **🔧 CRUD İşlemleri:** **Kayıt ekleme, okuma, güncelleme ve silme** operasyonları.
+- **📑 Layout Yönetimi:** **_Layout.cshtml** ile **sayfa şablonları** oluşturma.
+- **📋 Partial View Kullanımı:** **Tekrarlayan bileşenleri** yönetmek ve yeniden kullanmak için.
+- **🛠️ Entity Framework Sorguları:** ORM yapısıyla **veritabanı işlemlerinin yönetimi**.
+
+## 📸 **Proje Görselleri**
+![1](https://github.com/user-attachments/assets/ff4429b8-5c00-4a54-93b1-779cebe8753d)
+![2](https://github.com/user-attachments/assets/f4e785c3-a26e-4cfa-a274-d4b1b48c8f0f)
+![3](https://github.com/user-attachments/assets/938145cd-973c-4c78-83a1-226ff2370090)
+![4](https://github.com/user-attachments/assets/47e6ac9b-9138-44a2-9652-950011c51d3f)
+![5](https://github.com/user-attachments/assets/2e6c18f5-e04a-4f3b-b135-5c4fde47fda8)
+![6](https://github.com/user-attachments/assets/427fc9e8-5384-41cf-a410-24d7917c175f)
+![7](https://github.com/user-attachments/assets/8bc47b6f-10e1-4e5b-a01f-7f6a4a290a5f)
+---
+Bu proje, hastanelerde yönetimi kolaylaştıran bir sistem oluşturmayı hedeflemektedir. 🏥💙  
+Geliştirme sürecinde bana destek olan tüm hocalarıma teşekkür ederim! 🎉  
+
